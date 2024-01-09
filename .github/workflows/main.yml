@@ -1,0 +1,16 @@
+name: Run Simple Interest Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run bash script
+      run: bash simple-interest.sh
